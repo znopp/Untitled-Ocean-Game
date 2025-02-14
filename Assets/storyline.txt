@@ -1,0 +1,45 @@
+player is a sheep
+
+sheep in diving suit
+
+sheep swimming near bottom of the ocean
+
+suit not built to be at such depths -> very little health
+	suit is self-regenerating
+
+sharks hate sheep -> sharks try to attack sheep
+
+sheep has harpoon -> shoots at sharks, damages and/or kills -> coins
+
+stall with a carpet on left side of screen = shop
+	upgrade harpoon
+		dmg
+		reload speed
+		reel-in speed
+		casting speed
+		more coins
+
+	buy better harpoon
+		also upgrade harpoon in the same ways
+
+	buy raygun
+
+	upgrade player stats
+		suit health
+		suit regeneration speed
+		swimming speed
+		jumping height
+
+
+optional storyline:
+	you were on a routine ocean expedition mission, terrible weather caused the ship to sink and you fell to the bottom of the ocean. without a safety line you cant get up
+
+	conveniently the weapons storage and other useful items fell along with you, and from the scraps laying around you were able to build together a comforting stall that you can use to upgrade your items
+
+	you could just not pay, but you're worried that you'll be fined for taking items from the storage without having paid anything, so instead you rob a shark to get a harpoon
+
+	they didn't have much money, so you could only afford the old and rusty one
+
+	now all the sharks are mad at you and won't leave you alone until you leave
+
+	thankfully the sheep society knows that you are in danger, and all you have to do is survive for <some time>
