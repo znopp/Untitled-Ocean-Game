@@ -73,9 +73,29 @@ namespace Enemy
             {
                 SpawnHealth(_healthGameObject.healthGameObject, position);
             }
-            
-            _enemySpawning.SpawnEnemyNoCooldown(_enemySpawning.shark, position);
-            _enemySpawning.SpawnEnemyNoCooldown(_enemySpawning.shark, position);
+
+            switch (bigShark.gameObject.name)
+            {
+                case "Big Shark": 
+                    _enemySpawning.SpawnEnemyNoCooldown(_enemySpawning.shark, position);
+                    _enemySpawning.SpawnEnemyNoCooldown(_enemySpawning.shark, position);
+                    break;
+                
+                case "Big Moustache Shark": 
+                    _enemySpawning.SpawnEnemyNoCooldown(_enemySpawning.moustacheShark, position);
+                    _enemySpawning.SpawnEnemyNoCooldown(_enemySpawning.moustacheShark, position);
+                    break;
+                
+                case "Big Pink Shark": 
+                    _enemySpawning.SpawnEnemyNoCooldown(_enemySpawning.pinkShark, position);
+                    _enemySpawning.SpawnEnemyNoCooldown(_enemySpawning.pinkShark, position);
+                    break;
+                
+                case "Big Pink Moustache Shark": 
+                    _enemySpawning.SpawnEnemyNoCooldown(_enemySpawning.pinkMoustacheShark, position);
+                    _enemySpawning.SpawnEnemyNoCooldown(_enemySpawning.pinkMoustacheShark, position);
+                    break;
+            }
         }
 
         private void SpawnCoin(GameObject money, Vector3 position)

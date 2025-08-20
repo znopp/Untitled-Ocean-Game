@@ -27,8 +27,14 @@ namespace Enemy
         
         // Enemy GameObjects
         public GameObject shark;
+        public GameObject moustacheShark;
         public GameObject bigShark;
-        
+        public GameObject bigMoustacheShark;
+        public GameObject pinkShark;
+        public GameObject pinkMoustacheShark;
+        public GameObject bigPinkShark;
+        public GameObject bigPinkMoustacheShark;
+
         // Random position within spawnable area
         private int _randomSpawnpoint;
         
@@ -133,17 +139,44 @@ namespace Enemy
                 // Get a random position within the selected spawnpoint
                 var randomPosition = GetRandomPositionInSpawnpoint();
                 
-                // min inclusive, max exclusive -> 0 - 9 = 10 digits, checking a digit = 10% chance
-
-                if (Random.Range(0, 10) == 9)
-                {
-                    Instantiate(bigShark, randomPosition, quaternion.identity, enemiesParent).name ="Big Shark";
-                }
-                else
-                {
-                    Instantiate(shark, randomPosition, Quaternion.identity, enemiesParent).name = "Shark";
-                }
+                // min inclusive, max exclusive. 0 - 20 = 20 digits -> Checking a digit = 5% chance
                 
+                var randomValue = Random.Range(0, 20);
+                
+                switch (randomValue)
+                {
+                    case 3: // big pink moustache shark
+                        Instantiate(bigPinkMoustacheShark, randomPosition, quaternion.identity, enemiesParent).name = "Big Pink Moustache Shark";
+                        break;
+                    
+                    case 4: // pink moustache shark
+                        Instantiate(pinkMoustacheShark, randomPosition, quaternion.identity, enemiesParent).name = "Pink Moustache Shark";
+                        break;
+                    
+                    case 5: // big pink shark
+                        Instantiate(bigPinkShark, randomPosition, quaternion.identity, enemiesParent).name = "Big Pink Shark";
+                        break;
+                    
+                    case 6: // pink shark
+                        Instantiate(pinkShark, randomPosition, quaternion.identity, enemiesParent).name = "Pink Shark";
+                        break;
+                    
+                    case 7: // big shark with moustache
+                        Instantiate(bigMoustacheShark, randomPosition, quaternion.identity, enemiesParent).name = "Big Moustache Shark";
+                        break;
+                    
+                    case 8: // shark with moustache
+                        Instantiate(moustacheShark, randomPosition, quaternion.identity, enemiesParent).name = "Moustache Shark";
+                        break;
+                    
+                    case 9: // big shark
+                        Instantiate(bigShark, randomPosition, quaternion.identity, enemiesParent).name = "Big Shark";
+                        break;
+                    
+                    default: // shark
+                        Instantiate(shark, randomPosition, Quaternion.identity, enemiesParent).name = "Shark";
+                        break;
+                }
                 
             }
             

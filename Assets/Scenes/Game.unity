@@ -19233,7 +19233,13 @@ MonoBehaviour:
   - {fileID: 329530207}
   enemiesParent: {fileID: 2072107534}
   shark: {fileID: 1963874775078320695, guid: da63cd2b9123b344183e4429c60219b7, type: 3}
+  moustacheShark: {fileID: 1963874775078320695, guid: 799ae078066c4864b8826a6a2ae778a5, type: 3}
   bigShark: {fileID: 1963874775078320695, guid: 98b39f5c1bb809743b488ac14c3e4be9, type: 3}
+  bigMoustacheShark: {fileID: 1963874775078320695, guid: 9aa0d9f8d93a440439d9630a56b1f2a4, type: 3}
+  pinkShark: {fileID: 1963874775078320695, guid: 52b5f6cf20d63a84592665d12c7cfe80, type: 3}
+  pinkMoustacheShark: {fileID: 1963874775078320695, guid: cdacf400f4fa0d448826b19dca4cd1ac, type: 3}
+  bigPinkShark: {fileID: 1963874775078320695, guid: da80105a38093d341bf18d98dc315c14, type: 3}
+  bigPinkMoustacheShark: {fileID: 1963874775078320695, guid: 6423510fbb4c9b7428b2d1627a16abc6, type: 3}
   timePlayedCounter: {fileID: 423333851}
 --- !u!114 &2072107536
 MonoBehaviour:
