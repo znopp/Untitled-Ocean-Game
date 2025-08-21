@@ -109,7 +109,7 @@ namespace Shop
 
         public void Speed()
         {
-            if (interactCoin.coins < suitCost)
+            if (interactCoin.coins < speedCost)
             {
                 SoundFXManager.Instance.playInsufficientFundsFX.Play();
                 return;
@@ -258,12 +258,12 @@ namespace Shop
 
         private void PurchaseSpeed()
         {
-            interactCoin.RemoveCoins(suitCost);
+            interactCoin.RemoveCoins(speedCost);
             swimSpeedPurchased++;
             controls.speed += 0.5f;
             
-            suitCost += 10;
-            speedCoinText.text = suitCost.ToString();
+            speedCost += 10;
+            speedCoinText.text = speedCost.ToString();
             speedLevelText.text = swimSpeedPurchased + "/3";
         }
 
