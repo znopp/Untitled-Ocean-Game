@@ -8,7 +8,7 @@ I decided to take it upon myself to continue development on my own. Over the pas
 
 ## Versions
 
-In the Releases section are every version of the game I have built. Up until version 0.9.0, it was only built for Windows, but 0.9.0 and forward have been and will be created for Windows, Linux and MacOS. I achieve this by using Unity's own build tool, so if something is broken, it is not because of me!
+In the Releases section is every version of the game I have built. Up until version 0.9.0, it was only built for Windows, but 0.9.0 and forward have been and will be created for Windows, Linux and MacOS. I achieve this by using Unity's own build tool, so if something is broken, it is not because of me!
 
 ## Attribution
 
